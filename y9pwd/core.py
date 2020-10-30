@@ -109,8 +109,7 @@ signInCorrect = False
 print(f"OK {username} - lets practice signing in.")
 signInCount = 5
 
-while signInCount > 0:
-    while signInCorrect == False:
+while signInCount > 0 and signInCorrect == False:
         signIn_username = input("Username: ")
         signIn_pwd = input("Password: ")
         if signIn_username in database.keys(): #Checks if username entered by user is in the keys of the dictionary
